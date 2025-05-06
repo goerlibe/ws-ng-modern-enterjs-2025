@@ -1,5 +1,5 @@
 import { AsyncPipe } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { FastSvgComponent } from '@push-based/ngx-fast-svg';
@@ -37,7 +37,7 @@ export class AppShellComponent {
 
   genres$ = this.movieService.getGenres();
 
-  sideDrawerOpen = false;
+  sideDrawerOpen = signal(false);
 
   private _searchValue = '';
   set searchValue(value: string) {
@@ -49,7 +49,7 @@ export class AppShellComponent {
   }
 
   toggleSideDrawer() {
-    this.sideDrawerOpen = !this.sideDrawerOpen;
+    this.sideDrawerOpen.update((x) => !x);
   }
 
   trackNavigation(route: string) {
