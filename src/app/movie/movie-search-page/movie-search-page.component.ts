@@ -1,4 +1,3 @@
-import { NgIf } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
@@ -11,12 +10,13 @@ import { MovieListComponent } from '../movie-list/movie-list.component';
 @Component({
   selector: 'movie-search-page',
   template: `
-    <movie-list *ngIf="movies() as movies; else loader" [movies]="movies" />
-    <ng-template #loader>
+    @if (movies(); as movies) {
+      <movie-list [movies]="movies" />
+    } @else {
       <div class="loader"></div>
-    </ng-template>
+    }
   `,
-  imports: [MovieListComponent, NgIf],
+  imports: [MovieListComponent],
 })
 export class MovieSearchPageComponent {
   private movieService = inject(MovieService);
