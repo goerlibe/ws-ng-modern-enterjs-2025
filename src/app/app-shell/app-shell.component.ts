@@ -39,13 +39,10 @@ export class AppShellComponent {
 
   sideDrawerOpen = signal(false);
 
-  private _searchValue = '';
-  set searchValue(value: string) {
-    this._searchValue = value;
+  protected searchValue = signal('');
+  setSearchValue(value: string) {
+    this.searchValue.set(value);
     this.router.navigate(['search', value]);
-  }
-  get searchValue(): string {
-    return this._searchValue;
   }
 
   toggleSideDrawer() {
