@@ -1,5 +1,6 @@
-import { AsyncPipe, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, switchMap } from 'rxjs';
 
@@ -10,21 +11,20 @@ import { MovieListComponent } from '../movie-list/movie-list.component';
 @Component({
   selector: 'movie-search-page',
   template: `
-    <movie-list
-      *ngIf="movies$ | async as movies; else loader"
-      [movies]="movies"
-    />
+    <movie-list *ngIf="movies() as movies; else loader" [movies]="movies" />
     <ng-template #loader>
       <div class="loader"></div>
     </ng-template>
   `,
-  imports: [MovieListComponent, AsyncPipe, NgIf],
+  imports: [MovieListComponent, NgIf],
 })
 export class MovieSearchPageComponent {
   private movieService = inject(MovieService);
   private activatedRoute = inject(ActivatedRoute);
 
-  movies$: Observable<TMDBMovieModel[]> = this.activatedRoute.params.pipe(
-    switchMap((params) => this.movieService.searchMovies(params['query'])),
-  );
+  private movies$: Observable<TMDBMovieModel[]> =
+    this.activatedRoute.params.pipe(
+      switchMap((params) => this.movieService.searchMovies(params['query'])),
+    );
+  protected movies = toSignal(this.movies$);
 }
