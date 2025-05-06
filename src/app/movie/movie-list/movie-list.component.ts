@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { FastSvgComponent } from '@push-based/ngx-fast-svg';
 
+import { DirtyCheckComponent } from '../../shared/dirty-check/dirty-check.component';
 import { TMDBMovieModel } from '../../shared/model/movie.model';
 import { MovieCardComponent } from '../movie-card/movie-card.component';
 
@@ -36,7 +37,12 @@ import { MovieCardComponent } from '../movie-card/movie-card.component';
       position: relative;
     }
   `,
-  imports: [MovieCardComponent, RouterLink, FastSvgComponent],
+  imports: [
+    MovieCardComponent,
+    RouterLink,
+    FastSvgComponent,
+    DirtyCheckComponent,
+  ],
 })
 export class MovieListComponent {
   @Input({ required: true }) movies!: TMDBMovieModel[];
