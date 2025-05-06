@@ -35,7 +35,7 @@ export class AppShellComponent {
   private router = inject(Router);
   private trackingService = inject(TrackingService);
 
-  genres$ = this.movieService.getGenres();
+  genres$ = this.movieService.getGenres(); // TODO use a signal?
 
   sideDrawerOpen = signal(false);
   protected searchValue = signal('');
