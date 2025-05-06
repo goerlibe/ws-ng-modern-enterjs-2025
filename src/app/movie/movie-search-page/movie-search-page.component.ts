@@ -27,7 +27,7 @@ import { MovieListComponent } from '../movie-list/movie-list.component';
 })
 export class MovieSearchPageComponent {
   private movieService = inject(MovieService);
-  private queryParam = injectParams((p) => p['query'] as string);
+  private queryParam = injectParams('query');
 
   protected moviesResource = rxResource({
     request: this.queryParam,
@@ -39,6 +39,6 @@ export class MovieSearchPageComponent {
 
   movies = rxResource({
     request: this.queryParam,
-    loader: ({ request: query }) => this.movieService.searchMovies(query),
+    loader: ({ request: query }) => this.movieService.searchMovies(query!),
   });
 }
