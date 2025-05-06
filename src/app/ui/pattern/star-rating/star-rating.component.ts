@@ -4,7 +4,7 @@ import {
   Component,
   computed,
   Input,
-  signal,
+  input,
 } from '@angular/core';
 
 const range = 10;
@@ -28,7 +28,7 @@ const numStars = 5;
         ★
       </span>
     </div>
-    <div class="rating-value" *ngIf="showRating">{{ rating }}</div>
+    <div class="rating-value" *ngIf="showRating">{{ rating() }}</div>
   `,
   styleUrls: [
     'star-rating.component.scss',
@@ -41,7 +41,7 @@ export class StarRatingComponent {
   range = range;
   numStars = numStars;
   stars = computed(() => {
-    const scaledRating = this._rating() / (this.range / this.numStars);
+    const scaledRating = this.rating() / (this.range / this.numStars);
     const full = Math.floor(scaledRating);
     const half = scaledRating % 1 > 0.5 ? 1 : 0;
     const empty = this.numStars - full - half;
@@ -50,15 +50,8 @@ export class StarRatingComponent {
       .concat(new Array(half).fill(0))
       .concat(new Array(empty).fill(-1));
   });
-  @Input() showRating = false;
-  tooltipText = computed(() => `${this._rating()} average rating`);
+  @Input() showRating = false; // TODO make it a signal
+  tooltipText = computed(() => `${this.rating()} average rating`);
 
-  private _rating = signal(5);
-  @Input()
-  set rating(rating: number | undefined) {
-    this._rating.set(rating || 0);
-  }
-  get rating(): number {
-    return this._rating();
-  }
+  rating = input(5); // input.required<number>();
 }
