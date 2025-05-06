@@ -29,7 +29,6 @@ import { MovieSearchControlComponent } from '../movie-search-control/movie-searc
 export class MyMovieListComponent implements OnInit {
   private movieService = inject(MovieService);
 
-
   myMovieForm = new FormGroup({
     movie: new FormControl(null, [
       Validators.required,

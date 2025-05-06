@@ -1,4 +1,4 @@
-@use "../../token/mixins/flex";
+@use '../../token/mixins/flex';
 
 :host {
   display: contents;
@@ -17,7 +17,7 @@
   outline: none;
   border-radius: 100px;
   transition: width var(--theme-anim-duration-standard)
-  var(--theme-anim-easing-easeInOut);
+    var(--theme-anim-easing-easeInOut);
 }
 
 .magnifier-button {
@@ -39,7 +39,7 @@
   color: var(--palette-secondary-contrast-text);
   border: none;
   transition: margin-left var(--theme-anim-duration-standard)
-  var(--theme-anim-easing-easeInOut);
+    var(--theme-anim-easing-easeInOut);
 }
 
 input:focus,

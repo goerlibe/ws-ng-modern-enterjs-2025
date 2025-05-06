@@ -24,7 +24,6 @@ export class MovieSearchPageComponent {
   private movieService = inject(MovieService);
   private activatedRoute = inject(ActivatedRoute);
 
-
   movies$: Observable<TMDBMovieModel[]> = this.activatedRoute.params.pipe(
     switchMap((params) => this.movieService.searchMovies(params['query'])),
   );

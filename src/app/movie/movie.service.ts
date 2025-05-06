@@ -15,7 +15,6 @@ import { TMDBMovieGenreModel } from '../shared/model/movie-genre.model';
 export class MovieService {
   private httpClient = inject(HttpClient);
 
-
   getGenres(): Observable<TMDBMovieGenreModel[]> {
     return this.httpClient
       .get<{

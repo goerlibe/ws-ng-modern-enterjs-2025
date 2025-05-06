@@ -1,5 +1,5 @@
 @use '../../token/mixins/media';
-@use "../../token/mixins/flex";
+@use '../../token/mixins/flex';
 
 :host {
   display: contents;
@@ -17,9 +17,9 @@
   padding: 32px 16px 16px;
   overflow-y: auto;
   box-sizing: border-box;
-  transition: left var(--theme-anim-duration-short) var(--theme-anim-easing-easeOut),
-    transform var(--theme-anim-duration-short)
-    var(--theme-anim-easing-easeOut);
+  transition:
+    left var(--theme-anim-duration-short) var(--theme-anim-easing-easeOut),
+    transform var(--theme-anim-duration-short) var(--theme-anim-easing-easeOut);
   box-shadow: var(--theme-shadow-16);
   background-color: var(--palette-background-paper);
   left: -250px;

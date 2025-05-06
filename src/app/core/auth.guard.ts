@@ -7,7 +7,6 @@ import { AuthService } from './auth.service';
 export class AuthGuard implements CanActivate {
   private authService = inject(AuthService);
 
-
   canActivate(): boolean {
     if (this.authService.isAuthenticated) {
       return true;

@@ -4,11 +4,7 @@
     {
       "adult": false,
       "backdrop_path": "/bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg",
-      "genre_ids": [
-        28,
-        14,
-        878
-      ],
+      "genre_ids": [28, 14, 878],
       "id": 436270,
       "original_language": "en",
       "original_title": "Black Adam",
@@ -24,11 +20,7 @@
     {
       "adult": false,
       "backdrop_path": "/7zQJYV02yehWrQN6NjKsBorqUUS.jpg",
-      "genre_ids": [
-        28,
-        18,
-        36
-      ],
+      "genre_ids": [28, 18, 36],
       "id": 724495,
       "original_language": "en",
       "original_title": "The Woman King",
@@ -44,11 +36,7 @@
     {
       "adult": false,
       "backdrop_path": "/au4HUSWDRadIcl9CqySlw1kJMfo.jpg",
-      "genre_ids": [
-        80,
-        28,
-        53
-      ],
+      "genre_ids": [80, 28, 53],
       "id": 829799,
       "original_language": "en",
       "original_title": "Paradise City",
@@ -64,11 +52,7 @@
     {
       "adult": false,
       "backdrop_path": "/sUuzl04qNIYsnwCLQpZ2RSvXA1V.jpg",
-      "genre_ids": [
-        35,
-        28,
-        53
-      ],
+      "genre_ids": [35, 28, 53],
       "id": 792775,
       "original_language": "is",
       "original_title": "Leynilögga",
@@ -84,12 +68,7 @@
     {
       "adult": false,
       "backdrop_path": "/kmzppWh7ljL6K9fXW72bPN3gKwu.jpg",
-      "genre_ids": [
-        14,
-        28,
-        35,
-        80
-      ],
+      "genre_ids": [14, 28, 35, 80],
       "id": 1013860,
       "original_language": "en",
       "original_title": "R.I.P.D. 2: Rise of the Damned",
@@ -105,11 +84,7 @@
     {
       "adult": false,
       "backdrop_path": "/707thQazLJiYLBhCrZlRoV05NNL.jpg",
-      "genre_ids": [
-        28,
-        18,
-        53
-      ],
+      "genre_ids": [28, 18, 53],
       "id": 948276,
       "original_language": "fr",
       "original_title": "Balle perdue 2",
@@ -125,11 +100,7 @@
     {
       "adult": false,
       "backdrop_path": "/90ZZIoWQLLEXSVm0ik3eEQBinul.jpg",
-      "genre_ids": [
-        28,
-        27,
-        53
-      ],
+      "genre_ids": [28, 27, 53],
       "id": 988233,
       "original_language": "en",
       "original_title": "Hex",
@@ -145,11 +116,7 @@
     {
       "adult": false,
       "backdrop_path": "/jCY35GkjwWUmoPO9EV1lWL6kuyj.jpg",
-      "genre_ids": [
-        28,
-        12,
-        53
-      ],
+      "genre_ids": [28, 12, 53],
       "id": 855440,
       "original_language": "es",
       "original_title": "Polar",
@@ -165,11 +132,7 @@
     {
       "adult": false,
       "backdrop_path": "/vmDa8HijINCAFYKqsMz0YM3sVyE.jpg",
-      "genre_ids": [
-        80,
-        28,
-        53
-      ],
+      "genre_ids": [80, 28, 53],
       "id": 747803,
       "original_language": "en",
       "original_title": "One Way",
@@ -185,10 +148,7 @@
     {
       "adult": false,
       "backdrop_path": "/8Tr79lfoCkOYRg8SYwWit4OoQLi.jpg",
-      "genre_ids": [
-        878,
-        28
-      ],
+      "genre_ids": [878, 28],
       "id": 872177,
       "original_language": "en",
       "original_title": "Corrective Measures",
@@ -204,10 +164,7 @@
     {
       "adult": false,
       "backdrop_path": "/sP1ShE4BGLkHSRqG9ZeGHg6C76t.jpg",
-      "genre_ids": [
-        53,
-        80
-      ],
+      "genre_ids": [53, 80],
       "id": 934641,
       "original_language": "en",
       "original_title": "The Minute You Wake Up Dead",
@@ -223,11 +180,7 @@
     {
       "adult": false,
       "backdrop_path": "/rfnmMYuZ6EKOBvQLp2wqP21v7sI.jpg",
-      "genre_ids": [
-        35,
-        878,
-        12
-      ],
+      "genre_ids": [35, 878, 12],
       "id": 774752,
       "original_language": "en",
       "original_title": "The Guardians of the Galaxy Holiday Special",
@@ -243,11 +196,7 @@
     {
       "adult": false,
       "backdrop_path": "/xDMIl84Qo5Tsu62c9DGWhmPI67A.jpg",
-      "genre_ids": [
-        28,
-        12,
-        878
-      ],
+      "genre_ids": [28, 12, 878],
       "id": 505642,
       "original_language": "en",
       "original_title": "Black Panther: Wakanda Forever",
@@ -263,11 +212,7 @@
     {
       "adult": false,
       "backdrop_path": "/c1bz69r0v065TGFA5nqBiKzPDys.jpg",
-      "genre_ids": [
-        35,
-        10751,
-        10402
-      ],
+      "genre_ids": [35, 10751, 10402],
       "id": 830784,
       "original_language": "en",
       "original_title": "Lyle, Lyle, Crocodile",
@@ -283,11 +228,7 @@
     {
       "adult": false,
       "backdrop_path": "/kpUre8wWSXn3D5RhrMttBZa6w1v.jpg",
-      "genre_ids": [
-        35,
-        10751,
-        14
-      ],
+      "genre_ids": [35, 10751, 14],
       "id": 338958,
       "original_language": "en",
       "original_title": "Disenchanted",
@@ -303,11 +244,7 @@
     {
       "adult": false,
       "backdrop_path": "/olPXihyFeeNvnaD6IOBltgIV1FU.jpg",
-      "genre_ids": [
-        27,
-        9648,
-        53
-      ],
+      "genre_ids": [27, 9648, 53],
       "id": 882598,
       "original_language": "en",
       "original_title": "Smile",
@@ -323,11 +260,7 @@
     {
       "adult": false,
       "backdrop_path": "/5aSvzECXrtABcIh7fZYkH2K6ttC.jpg",
-      "genre_ids": [
-        28,
-        53,
-        80
-      ],
+      "genre_ids": [28, 53, 80],
       "id": 972313,
       "original_language": "en",
       "original_title": "Blowback",
@@ -343,9 +276,7 @@
     {
       "adult": false,
       "backdrop_path": null,
-      "genre_ids": [
-        10749
-      ],
+      "genre_ids": [10749],
       "id": 485470,
       "original_language": "ko",
       "original_title": "착한 형수2",
@@ -361,11 +292,7 @@
     {
       "adult": false,
       "backdrop_path": "/eyiSLRh44SKKWIJ6bxWq8z1sscB.jpg",
-      "genre_ids": [
-        53,
-        27,
-        80
-      ],
+      "genre_ids": [53, 27, 80],
       "id": 899294,
       "original_language": "en",
       "original_title": "Frank and Penelope",
@@ -381,11 +308,7 @@
     {
       "adult": false,
       "backdrop_path": "/yNib9QAiyaopUJbaayKQ2xK7mYf.jpg",
-      "genre_ids": [
-        18,
-        28,
-        10752
-      ],
+      "genre_ids": [18, 28, 10752],
       "id": 966220,
       "original_language": "uk",
       "original_title": "Снайпер. Білий ворон",

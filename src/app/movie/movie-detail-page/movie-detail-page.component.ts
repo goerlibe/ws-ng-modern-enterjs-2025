@@ -149,7 +149,6 @@ export class MovieDetailPageComponent {
   private route = inject(ActivatedRoute);
   private movieService = inject(MovieService);
 
-
   movie$ = this.route.params.pipe(
     switchMap((params) =>
       this.movieService.getMovieById(params.id).pipe(startWith(null)),

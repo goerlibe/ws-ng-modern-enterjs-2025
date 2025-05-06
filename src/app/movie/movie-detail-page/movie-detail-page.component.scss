@@ -1,5 +1,5 @@
-@use "../../ui/token/mixins/flex";
-@use "../../ui/component/aspect-ratio/aspect-ratio";
+@use '../../ui/token/mixins/flex';
+@use '../../ui/component/aspect-ratio/aspect-ratio';
 
 :host {
   width: 100%;
@@ -24,7 +24,6 @@
 }
 
 .movie-detail {
-
   @media only screen and (max-width: 1500px) {
     &--grid-item {
       padding: 3rem;
@@ -89,7 +88,6 @@
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
 }
-
 
 .cast-list--btn {
   background: transparent;

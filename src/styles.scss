@@ -1,4 +1,3 @@
-
 /**
  * **🚀 Perf Tip for TBT:**
  *
@@ -28,8 +27,9 @@
 body {
   color: var(--palette-text-primary);
   background-color: var(--palette-background-default);
-  transition: color var(--duration) var(--timing),
-  background-color var(--duration) var(--timing);
+  transition:
+    color var(--duration) var(--timing),
+    background-color var(--duration) var(--timing);
 
   &.modal-visible {
     .content {
@@ -40,7 +40,7 @@ body {
 
 .movie-card,
 .movie-detail-wrapper {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body.dark img:not([src*='.svg']) {
@@ -89,7 +89,7 @@ body.dark img:not([src*='.svg']) {
 
 .favorite-widget {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   font-size: 1.5rem;
   margin-bottom: 4rem;
 }
@@ -117,7 +117,6 @@ movie-list:has(.movie-list-title) {
   right: 0;
 
   .movie-list-header {
-
   }
 }
 
@@ -130,8 +129,8 @@ movie-list:has(.movie-list-title) {
   color: var(--palette-text-disabled);
 
   &::before {
-    content: "❤️";
-    color: rgba(255, 0, 0, .3);
+    content: '❤️';
+    color: rgba(255, 0, 0, 0.3);
   }
 
   &.loading {
@@ -144,7 +143,7 @@ movie-list:has(.movie-list-title) {
   &:hover {
     color: var(--palette-text-primary);
     &::before {
-      color: rgba(255, 0, 0, .5);
+      color: rgba(255, 0, 0, 0.5);
     }
   }
 

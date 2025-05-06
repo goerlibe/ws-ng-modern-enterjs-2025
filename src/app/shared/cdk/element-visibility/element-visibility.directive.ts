@@ -1,4 +1,11 @@
-import { Directive, ElementRef, EventEmitter, NgZone, Output, inject } from '@angular/core';
+import {
+  Directive,
+  ElementRef,
+  EventEmitter,
+  NgZone,
+  Output,
+  inject,
+} from '@angular/core';
 import { filter, fromEvent, map } from 'rxjs';
 
 @Directive({

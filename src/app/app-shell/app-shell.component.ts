@@ -35,7 +35,6 @@ export class AppShellComponent {
   private router = inject(Router);
   private trackingService = inject(TrackingService);
 
-
   genres$ = this.movieService.getGenres();
 
   sideDrawerOpen = false;
