@@ -14,7 +14,7 @@ const numStars = 5;
   selector: 'ui-star-rating',
   template: `
     <span class="tooltip">
-      {{ tooltipText }}
+      {{ tooltipText() }}
     </span>
     <div class="stars">
       <span
@@ -51,19 +51,14 @@ export class StarRatingComponent {
       .concat(new Array(empty).fill(-1));
   });
   @Input() showRating = false;
-  tooltipText = `0 average rating`;
+  tooltipText = computed(() => `${this._rating()} average rating`);
 
   private _rating = signal(5);
   @Input()
   set rating(rating: number | undefined) {
     this._rating.set(rating || 0);
-    this.setToolTopText(this.rating);
   }
   get rating(): number {
     return this._rating();
-  }
-
-  private setToolTopText(rating: number) {
-    this.tooltipText = `${rating} average rating`;
   }
 }
